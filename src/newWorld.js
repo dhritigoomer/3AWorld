@@ -421,7 +421,7 @@ function renderAllShapes() {
 
     var head = new Cube();
     head.color = [150/255, 150/255, 150/255, 1 ];
-    head.textureNum = 1;
+    head.textureNum = 0;
     head.matrix.rotate(-HeadXAngle, 1, 0, 0);
     head.matrix.rotate(-HeadYAngle, 0, 1, 0);
     head.matrix.rotate(-HeadZAngle, 0, 0, 1);
@@ -430,8 +430,8 @@ function renderAllShapes() {
     head.render();
 
     var body = new Cube();
-    head.color = [150/255, 150/255, 150/255, 1];
-    head.textureNum = 0;
+    body.color = [150/255, 150/255, 150/255, 1 ];
+    body.textureNum = 1;
     body.matrix.scale(.5, 0.4, 0.65);
     body.matrix.translate(-.5, -.25, -0.25);
     body.render();
