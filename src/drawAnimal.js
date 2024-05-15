@@ -31,7 +31,6 @@ function drawAnimal() {
 
     var face = new Cube();
     face.color = faceC;
-    // face.textureNum = 0;
     face.matrix.rotate(-HeadXAngle, 1, 0, 0);
     face.matrix.rotate(-HeadYAngle, 0, 1, 0);
     face.matrix.rotate(-HeadZAngle, 0, 0, 1);
